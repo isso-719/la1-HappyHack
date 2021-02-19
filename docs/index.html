@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/bg.js"></script>
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#access">Access</a></li>
+      </ul>
+    </nav>
+
+    <div class="title-wrap">
+      <img src="./images/logo.png" alt="">
+      <p>We are Web Designers.</p>
+    </div>
+
+  </header>
+
+  <section id="introduction" class="fuwat">
+    <h2 class="section-title">Introduction</h2>
+    <div class="intro-box">
+      <img src="./images/introduction_001.jpg" alt="">
+      <div class="right-box">
+        <p>
+          Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+          特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+          誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
+        </p>
+        <a href="#introduction">会員登録</a>
+      </div>
+    </div>
+    <div class="intro-box">
+      <div class="left-box">
+        <p>
+          Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+          WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+          自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+        </p>
+        <a href="#introduction">会員登録</a>
+      </div>
+      <img src="./images/introduction_002.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="courses" class="fuwat">
+    <div id="particles-js"></div>
+    <div class="course-container">
+      <h2 class="section-title">Courses</h2>
+      <div class="course-wrap">
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/html.png" alt="">
+          </div>
+          <p>HTMLコース</p>
+          <a href="#courses" style="background-color: #f16529;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/css.png" alt="">
+          </div>
+          <p>CSSコース</p>
+          <a href="#courses" style="background-color: #29a9df;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/unity.png" alt="">
+          </div>
+          <p>Unityコース</p>
+          <a href="#courses" style="background-color: #333;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/ruby.png" alt="">
+          </div>
+          <p>Rubyコース</p>
+          <a href="#courses" style="background-color: #ff5252;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/js.png" alt="">
+          </div>
+          <p>JavaScriptコース</p>
+          <a href="#courses" style="background-color: #fed700;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/swift.png" alt="">
+          </div>
+          <p>Swiftコース</p>
+          <a href="#courses" style="background-color: #fe7536;">このコースを受ける</a>
+        </div>
+        <div class="course">
+          <div class="course-image">
+            <img src="./images/go.png" alt="">
+          </div>
+          <p>Goコース</p>
+          <a href="#courses" style="background-color: #73cedd;">このコースを受ける</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="images" class="fuwat">
+    <h2 class="section-title">Images</h2>
+    <div class="slider">
+      <img src="images/background1.jpg" alt="">
+      <img src="images/background2.jpg" alt="">
+      <img src="images/background3.jpg" alt="">
+      <img src="images/background4.jpg" alt="">
+      <img src="images/background5.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="access" class="fuwat">
+    <h2 class="section-title">Access</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1640.156569946127!2d135.49354334123032!3d34.69728099999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1613741797592!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+
+  <footer>© 2019 Happy Hack Inc.</footer>
+
+  <script>
+    // jquery bg switcher
+    $("header").bgswitcher({
+      images: ["images/background1.jpg", "images/background2.jpg", "images/background3.jpg", "images/background4.jpg", "images/background5.jpg"]
+    });
+
+    // particles js
+    particlesJS("particles-js", {
+      "particles":{
+        "number":{
+          "value": 80,
+          "density":{
+            "enable": true,
+            "value_area": 600
+          }
+        },
+        "color":{
+          "value":"#ffffff"
+        },
+        "shape":{
+          "type":"circle",
+          "stroke":{
+            "width":0,
+            "color":"#000000"
+          },
+        },
+        "opacity":{
+          "value":1,
+          "random":false,
+          "anim":{
+            "enable":false,
+            "speed":1,
+            "opacity_min":1,
+            "sync":false
+          }
+        },
+        "size":{
+          "value":3,
+          "random":true,
+          "anim":{
+            "enable":false,
+            "speed":40,
+            "size_min":0.1,
+            "sync":false
+          }
+        },
+        "line_linked":{
+          "enable":true,
+          "distance":150,
+          "color":"#ffffff",
+          "opacity":0.7,
+          "width":1
+        },
+        "move":{
+          "enable":true,
+          "speed":6,
+          "direction":"none",
+          "random":false,
+          "out_mode":"out",
+        }
+      },
+      "interactivity":{
+        "detect_on":"canvas",
+        "events":{
+          "onhover":{
+            "enable":false,
+          },
+          "onclick":{
+            "enable":false,
+          },
+        },
+        "modes":{
+          "grab":{
+            "distance":400,
+            "line_linked":{
+              "opacity":1
+            }
+          },
+        }
+      },
+      "retina_detect":true,
+      "resize":true
+      });
+
+      // slik
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4
+      });
+
+      // fuwachan
+      $(document).ready(function(){
+        $('.fuwat').css('visibility','hidden');
+        $(window).scroll(function(){
+        var windowHeight = $(window).height(),
+            topWindow = $(window).scrollTop();
+        $('.fuwat').each(function(){
+          var objectPosition = $(this).offset().top;
+          if(topWindow > objectPosition - windowHeight + 200){
+          $(this).addClass("fuwatAnime");
+          }
+        });
+        });
+      });
+
+  </script>
+</body>
+</html>
