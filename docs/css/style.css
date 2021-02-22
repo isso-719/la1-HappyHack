@@ -92,18 +92,19 @@ h2 {
 }
 
 .intro-box img {
-    width: 500px;
+    /* width: 500px; */
+    width: 50%;
     margin: 20px;
 }
 
 .intro-box .right-box,
 .intro-box .left-box {
-    width: 500px;
+    width: 50%;
     margin: 20px;
 }
 
 .intro-box p {
-    width: 400px;
+    /* width: 400px; */
     margin: 0 50px 20px;
     color: #333;
     line-height: 36px;
@@ -269,4 +270,132 @@ footer {
 @keyframes fuwatAnime {
     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+.sp-mode {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+
+    .title-wrap {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .title-wrap img {
+        width: 90%;
+    }
+
+    /* .intro-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro-box img {
+        width: 90%;
+    } */
+
+    /* iframe {
+        width: 100%;
+    } */
+}
+
+@media(max-width: 768px) {
+    .sp-mode {
+        display: block;
+    }
+
+    .pc-mode {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .title-wrap p {
+        font-size: 36px;
+        word-wrap: break-word;
+    }
+
+    .intro-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .intro-box img {
+        width: 90%;
+    }
+
+    .intro-box .right-box,
+    .intro-box .left-box {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+
+    h2 {
+        font-size: 36px;
+        word-wrap: break-word;
+    }
+
+    .title-wrap p {
+        font-size: 24px;
+        word-wrap: break-word;
+    }
+}
+
+@media(max-width: 450px) {
+
+    h2 {
+        font-size: 36px;
+        word-wrap: break-word;
+        padding: 40px 0;
+    }
+
+    .title-wrap p {
+        font-size: 24px;
+        word-wrap: break-word;
+    }
+
+    .intro-box p {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+
+/* どこまで小さくすればいいかわからないのでカード用、これで150pxまでは行けそう */
+@media(max-width: 236px) {
+
+    .course {
+        margin: 0;
+        margin-bottom: 24px;
+        padding: 24px 0;
+        width: 100%;
+    }
+
+    .course a {
+        width: 100%;
+        font-size: 9px;
+    }
+
+    .intro-box a {
+        width: 100%;
+    }
+
+    .intro-box p {
+        width: 90%;
+    }
+
+    #images {
+        display: none;
+    }
+
 }
