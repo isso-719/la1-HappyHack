@@ -92,7 +92,7 @@ h2 {
 }
 
 .intro-box img {
-    /* width: 500px; */
+    max-width: 500px;
     width: 50%;
     margin: 20px;
 }
@@ -100,11 +100,12 @@ h2 {
 .intro-box .right-box,
 .intro-box .left-box {
     width: 50%;
+    max-width: 500px;
     margin: 20px;
 }
 
 .intro-box p {
-    /* width: 400px; */
+    max-width: 400px;
     margin: 0 50px 20px;
     color: #333;
     line-height: 36px;
