@@ -136,6 +136,8 @@
 
     left: 50%;
     transform: translateX(-50%);
+
+    width: 150px;
 }
 .slick-dots li
 {
